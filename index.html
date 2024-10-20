@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>WorkFit</title>
+</head>
+<body>
+    <div class="container">
+        <h1>WorkFit Scheduler</h1>
+        
+        <form id="scheduleForm">
+            <h2>User Data</h2>
+            <label for="jobType">Job Type:</label>
+            <input type="text" id="jobType" name="job_type" required>
+            <label for="activityLevel">Activity Level:</label>
+            <input type="text" id="activityLevel" name="activity_level" required>
+            <label for="goals">Workout Goals:</label>
+            <input type="text" id="goals" name="goals" required>
+            
+            <h2>Schedule Tasks</h2>
+            <div id="tasks"></div>
+            <button type="button" id="addTask">Add Task</button>
+            
+            <button type="submit">Submit Schedule</button>
+        </form>
+
+        <div id="freeSlots"></div>
+        <div id="workoutSuggestions"></div> <!-- Moved this inside the container -->
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
